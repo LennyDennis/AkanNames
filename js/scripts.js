@@ -3,7 +3,6 @@ var mydate = document.getElementById("mydate");
 //var mydate = document.forms["akanform"]["mydate"];
 var gender = document.akanform.gender;
 
-var bday = mydate.value;
 var date = new Date(document.getElementById("mydate").value);
 var dateday = date.getDay();
 var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -37,7 +36,7 @@ function validate(){
         }
         if(valid){
             if(gender[i].value == "male"){
-                alert(mydate.value);
+                alert("You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]);
                 display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]; 
             }else{
             if(gender[i].value == "female"){
