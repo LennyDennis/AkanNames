@@ -18,3 +18,15 @@ body{
     border-top-left-radius: 15% 50%;
     border-bottom-left-radius: 15% 50%;
 }
+ul{
+    list-style: none;
+}
+.dob{
+    width: 60px;
+    border: none;
+    border-bottom:2px solid #ff5722;
+    margin-right: 5px;
+}
+::-webkit-input-placeholder{
+    color: #ff9800;
+}
