@@ -4,3 +4,17 @@ body{
     margin-top: 120px !important;
     
 }
+.main-left{
+    text-align: center;
+    color: white;
+    padding: 0px 40px;
+    background: url(/images/bg.jpeg) no-repeat  center center;
+    background-size: cover;
+}
+.main-right{
+    padding: 50px;
+    border: none;
+    background: white ;
+    border-top-left-radius: 15% 50%;
+    border-bottom-left-radius: 15% 50%;
+}
