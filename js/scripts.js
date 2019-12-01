@@ -11,4 +11,9 @@ var mName =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var fName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var valid = false;
 
+//getting error display objects
+var mydateerror = document.getElementById('mydateerror');
+var gendererror = document.getElementById('gendererror');
 
+//get diplay object
+var display = document.getElementById('display');
