@@ -48,3 +48,13 @@ function validate(){
             return false;
         }    
     }
+    function refresh(){
+        document.getElementById('mydateerror').innerHTML = "";
+        document.getElementById('gendererror').innerHTML = "";
+        document.getElementById('display').innerHTML = "";
+        mydate.value = "";
+        var ele = document.getElementsByName("gender");
+    
+        for(var j=0;j<gender.length;j++)
+           gender[j].checked = false;
+    }
