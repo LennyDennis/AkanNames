@@ -54,7 +54,7 @@ No known bugs however if you find any bug kindly reach out.
 
 
 
-##### Link to Live Site : 
+##### Link to Live Site : https://lennydennis.github.io/AkanNames/
 
 ### License
 
