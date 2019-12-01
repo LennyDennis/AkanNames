@@ -1,5 +1,6 @@
 //getting date input from the form
 var mydate = document.getElementById("mydate");
+//var mydate = document.forms["akanform"]["mydate"];
 var gender = document.akanform.gender;
 
 var bday = mydate.value;
@@ -9,7 +10,7 @@ var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sat
 var day = weekdays[dateday];
 var mName =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var fName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-var valid = false;
+var valid = false; 
 
 //getting error display objects
 var mydateerror = document.getElementById('mydateerror');
@@ -48,13 +49,14 @@ function validate(){
             return false;
         }    
     }
-    function refresh(){
-        document.getElementById('mydateerror').innerHTML = "";
-        document.getElementById('gendererror').innerHTML = "";
-        document.getElementById('display').innerHTML = "";
-        mydate.value = "";
-        var ele = document.getElementsByName("gender");
-    
-        for(var j=0;j<gender.length;j++)
-           gender[j].checked = false;
-    }
+}
+function refresh(){
+    document.getElementById('mydateerror').innerHTML = "";
+    document.getElementById('gendererror').innerHTML = "";
+    document.getElementById('display').innerHTML = "";
+    mydate.value = "";
+    var ele = document.getElementsByName("gender");
+
+    for(var j=0;j<gender.length;j++)
+       gender[j].checked = false;
+}
