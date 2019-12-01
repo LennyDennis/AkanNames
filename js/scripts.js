@@ -17,3 +17,13 @@ var gendererror = document.getElementById('gendererror');
 
 //get diplay object
 var display = document.getElementById('display');
+
+//validation function
+function validate(){
+    if(mydate.value == ""){
+        mydate.style.backgroundColor = "#ff9900be";
+        mydate.style.border = "2px groove red";
+        mydateerror.innerHTML = "Please enter a valid date ";
+        mydate.focus();
+        return false;
+    }
