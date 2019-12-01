@@ -30,3 +30,18 @@ ul{
 ::-webkit-input-placeholder{
     color: #ff9800;
 }
+.radio{
+    margin-right: 5px;
+}
+.button{
+    margin: 0px 40px;
+    border-radius: 20px;
+    border:none;
+    padding: 5px 10px;
+    font-weight: 600;
+    float: right;
+    background: #ff9800;
+}
+.button:hover{
+    background:#ff5722;
+}
