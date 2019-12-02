@@ -1,9 +1,9 @@
 //getting date input from the form
-var mydate = document.getElementById("mydate");
+var mydate = parseInt(document.getElementById("mydate"));
 //var mydate = document.forms["akanform"]["mydate"];
 var gender = document.akanform.gender;
 
-var date = new Date(document.getElementById("mydate").value);
+var date = new Date("06-10-1997");
 var dateday = date.getDay();
 var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 var day = weekdays[dateday];
@@ -36,7 +36,6 @@ function validate(){
         }
         if(valid){
             if(gender[i].value == "male"){
-                alert("You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]);
                 display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]; 
             }else{
             if(gender[i].value == "female"){
@@ -54,6 +53,9 @@ function refresh(){
     document.getElementById('gendererror').innerHTML = "";
     document.getElementById('display').innerHTML = "";
     mydate.value = "";
+    mydate.style.backgroundColor = "white";
+    mydate.style.border = "none";
+    mydate.style.borderBottom = "2px solid #ff5722";
     var ele = document.getElementsByName("gender");
 
     for(var j=0;j<gender.length;j++)
